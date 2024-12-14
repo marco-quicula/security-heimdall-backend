@@ -47,4 +47,4 @@ This project is licensed under the [Apache License 2.0](https://www.apache.org/l
 ## Name Inspiration
 The name "Security Heimdall" was inspired by Heimdall, the vigilant and protective guardian from Norse mythology. Heimdall exemplifies constant watchfulness and the safeguarding of crucial access points. Similarly, Security Heimdall is designed to manage and protect user access, passwords, and permissions, ensuring a secure and controlled environment.
 
-![imagem](https://github.com/user-attachments/assets/f40fe637-a214-4fa1-8670-0099e88f5b85)
+![heimdall](https://github.com/user-attachments/assets/6afa1500-f900-42a4-bac9-af160716a0e8)
