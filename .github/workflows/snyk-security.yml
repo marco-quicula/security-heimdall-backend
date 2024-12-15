@@ -46,10 +46,10 @@ jobs:
         # Use || true to not fail the pipeline
       - name: Snyk Code test
         run: snyk code test --sarif > snyk-code.sarif || true
-        env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
       - name: Snyk Open Source monitor
         run: snyk monitor --all-projects
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         # Use || true to not fail the pipeline.
       - name: Snyk IaC test and report
         run: snyk iac test --report || true
