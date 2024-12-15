@@ -39,8 +39,9 @@
     </scm>
     <properties>
         <java.version>23</java.version>
-        <sonar.organization>marco-quicula</sonar.organization>
-        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <fmt.version>2.25</fmt.version>
+        <maven.compiler.source>23</maven.compiler.source>
+        <maven.compiler.target>23</maven.compiler.target>
     </properties>
     <dependencies>
         <dependency>
@@ -85,7 +86,7 @@
             <plugin>
                 <groupId>com.spotify.fmt</groupId>
                 <artifactId>fmt-maven-plugin</artifactId>
-                <version>2.25</version>
+                <version>${fmt.version}</version>
                 <executions>
                     <execution>
                         <goals>
