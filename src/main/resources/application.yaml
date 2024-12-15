@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: security-heimdall-backend
+  docker:
+    compose:
+      enabled: false

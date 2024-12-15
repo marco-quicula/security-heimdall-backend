@@ -1,0 +1,38 @@
+volumes:
+  mongodb-1-data:
+
+networks:
+  heimdall-compose-network:
+
+services:
+  generate-password:
+    image: busybox:stable
+    volumes:
+      - ./db/mongo/secrets/:/usr/local/src
+    command: sh /usr/local/src/generate-password.sh "/usr/local/src/db_root_password.txt"
+
+  mongodb-1:
+    container_name: mongodb-1
+    depends_on:
+      - generate-password
+    image: mongo:8.0.3
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME_FILE: /run/secrets/mongodb-root-username
+      MONGO_INITDB_ROOT_PASSWORD_FILE: /run/secrets/mongodb-root-password
+    command: [--auth]
+    volumes:
+      - mongodb-1-data:/data/db
+    secrets:
+      - mongodb-root-username
+      - mongodb-root-password
+    networks:
+      - heimdall-compose-network
+
+secrets:
+  mongodb-root-username:
+    file: ./db/mongo/secrets/db_root_username.txt
+  mongodb-root-password:
+    file: ./db/mongo/secrets/db_root_password.txt
