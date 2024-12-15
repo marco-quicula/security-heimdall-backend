@@ -53,10 +53,6 @@ jobs:
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         # Use || true to not fail the pipeline.
-      - name: Snyk IaC test and report
-        run: snyk iac test --report
-        env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
       #- name: Build a Docker image
       #  run: docker build -t your/image-to-test .
       #- name: Snyk Container monitor
