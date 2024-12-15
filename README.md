@@ -1,5 +1,9 @@
 # Security Heimdall Backend
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=marco-quicula_security-heimdall-backend&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=marco-quicula_security-heimdall-backend)
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=marco-quicula_security-heimdall-backend)](https://sonarcloud.io/summary/new_code?id=marco-quicula_security-heimdall-backend)
+[![SonarQube Cloud](https://sonarcloud.io/images/project_badges/sonarcloud-highlight.svg)](https://sonarcloud.io/summary/new_code?id=marco-quicula_security-heimdall-backend)
+
 ## Overview
 Security Heimdall is a security application designed to efficiently and securely manage users, passwords, and permissions. This solution provides an additional layer of protection for systems, ensuring the integrity and confidentiality of information.
 
