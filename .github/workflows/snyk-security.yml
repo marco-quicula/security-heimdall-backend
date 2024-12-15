@@ -38,13 +38,11 @@ jobs:
       - uses: actions/checkout@v4
       - name: Set up Snyk CLI to check for security issues
         uses: snyk/actions/setup@0.4.0
-        # For Snyk Open Source you must first set up the development environment for your application's dependencies
-        # For example for Node
-        #- uses: actions/setup-node@v4
-        #  with:
-        #    node-version: 20
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+      - uses: actions/setup-node@v4.1.0
+        with:
+          node-version: '22'
         # Use || true to not fail the pipeline
       - name: Snyk Code test
         run: snyk code test --sarif > snyk-code.sarif || true
