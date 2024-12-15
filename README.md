@@ -1,4 +1,4 @@
-# Security Heimdall Backend
+# Security Heimdall Backend ![heimdall-32-without-back-lofi](https://github.com/user-attachments/assets/3f2cd6ca-520a-40b7-b4b0-158543174443)
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=marco-quicula_security-heimdall-backend&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=marco-quicula_security-heimdall-backend)
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=marco-quicula_security-heimdall-backend)](https://sonarcloud.io/summary/new_code?id=marco-quicula_security-heimdall-backend)
@@ -51,4 +51,4 @@ This project is licensed under the [Apache License 2.0](https://www.apache.org/l
 ## Name Inspiration
 The name "Security Heimdall" was inspired by Heimdall, the vigilant and protective guardian from Norse mythology. Heimdall exemplifies constant watchfulness and the safeguarding of crucial access points. Similarly, Security Heimdall is designed to manage and protect user access, passwords, and permissions, ensuring a secure and controlled environment.
 
-![heimdall](https://github.com/user-attachments/assets/6afa1500-f900-42a4-bac9-af160716a0e8)
+![heimdall](https://github.com/user-attachments/assets/9f4d642d-dc88-4295-a7e7-067edbad0ff0)
