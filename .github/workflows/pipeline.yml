@@ -82,7 +82,7 @@ jobs:
     name: Deploy to Environment
     runs-on: ubuntu-latest
     environment:
-      name: ${{ contains(github.ref, 'main') && 'Production' || contains(github.ref, 'Development') && 'development' || 'other' }}
+      name: ${{ contains(github.ref, 'main') && 'production' || contains(github.ref, 'development') && 'development' || 'other' }}
     needs:
     - snyk
     - build
