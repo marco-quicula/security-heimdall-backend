@@ -83,6 +83,9 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: ${{ contains(github.ref, 'main') && 'production' || contains(github.ref, 'develop') && 'development' || 'other' }}
+    defaults:
+      run:
+        shell: bash
     needs:
     - snyk
     - build
