@@ -90,7 +90,9 @@ jobs:
     steps:
       - name: Deploy
         run: |
-          echo "Deploy to Environment: ${{ vars.ENV_NAME }}"
+          echo "Deploy to Environment: $env_env_env"
+        env:
+          env_env_env: ${{ vars.ENV_NAME }}
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
